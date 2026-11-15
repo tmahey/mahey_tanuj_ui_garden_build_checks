@@ -1,0 +1,8 @@
+echo "Running Prettier check..."
+npm run format:check
+
+echo "Running ESLint check..."
+npm run lint
+
+echo "Running Tests..."
+CI=true npm test
