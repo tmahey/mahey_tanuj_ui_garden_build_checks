@@ -6,7 +6,7 @@ This is the Update for Assignment 13 of my Assignment 12. In this assignment, I 
 
 Copy the Assignment 12 folder, renamed it to 'mahey_tanuj_ui_garden_build_checks', set up a fresh Git repo, and install dependencies:
 
-cp -r ~/mahey_tanuj_ui_garden ~/mahey_tanuj_ui_garden_build_checks
+`cp -r ~/mahey_tanuj_ui_garden ~/mahey_tanuj_ui_garden_build_checks`
 cd ~/mahey_tanuj_ui_garden_build_checks
 rm -rf .git
 git init
