@@ -17,10 +17,10 @@ Copy the Assignment 12 folder, renamed it to 'mahey_tanuj_ui_garden_build_checks
 
 Run these commands anytime to test formatting, linting, and unit tests:
 
-npm run format:check
-npm run format
-npm run lint
-CI=true npm test
+`npm run format:check`
+`npm run format`
+`npm run lint`
+`CI=true npm test`
 
 
 ## 3. Husky Pre-Commit Hook
@@ -29,8 +29,8 @@ The Husky pre-commit hooks were setup using the following command: `npx husky in
 
 To test that Husky blocks bad commits, break formatting or add an unused variable and run:
 
-git add .
-git commit -m "--Cmmnt--"
+`git add .`
+`git commit -m "--Cmmnt--"`
 
 
 ## 4. GitHub Actions & Git Push Commands
@@ -38,11 +38,11 @@ git commit -m "--Cmmnt--"
 Commands used to push to GitHub:
 
 
-git add .
-git commit -m "Assignment 13: UI Garden with Prettier, ESLint, Husky, GitHub Actions, and Docker"
-git branch -M main
-git remote add origin https://github.com/tmahey/mahey_tanuj_ui_garden_build_checks.git
-git push -u origin main
+`git add .`
+`git commit -m "Assignment 13: UI Garden with Prettier, ESLint, Husky, GitHub Actions, and Docker"`
+`git branch -M main`
+`git remote add origin https://github.com/tmahey/mahey_tanuj_ui_garden_build_checks.git`
+`git push -u origin main`
 
 
 ## 5. Run with Docker on localhost:8018
@@ -50,17 +50,17 @@ git push -u origin main
 The `Dockerfile` builds the React app inside `/mahey_tanuj_ui_garden_build_checks` and serves the production files with Nginx on port `8018`.
 
 # Build the image:
-docker build -t mahey_tanuj_ui_garden_image .
+`docker build -t mahey_tanuj_ui_garden_image .`
 
 # Run the container:
-docker run -d -p 8018:8018 --name mahey_tanuj_coding_assignment13 mahey_tanuj_ui_garden_image
+`docker run -d -p 8018:8018 --name mahey_tanuj_coding_assignment13 mahey_tanuj_ui_garden_image`
 
 # Check that it is running:
-docker ps
+`docker ps`
 
 # Open the app in the browser at `http://localhost:8018` or `http://127.0.0.1:8018`.
 
 # Stop and remove the container when done:
 
-docker stop mahey_tanuj_coding_assignment13
-docker rm mahey_tanuj_coding_assignment13
+`docker stop mahey_tanuj_coding_assignment13`
+`docker rm mahey_tanuj_coding_assignment13`
