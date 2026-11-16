@@ -15,7 +15,7 @@ import { HeroImage } from './components/HeroImage/Index';
 import { Card } from './components/Card/Index';
 
 const Container = styled.div`
-  max-width: 1100px
+  max-width: 1100px;
   margin: 0 auto;
   padding: 30px 20px;
   font-family:
