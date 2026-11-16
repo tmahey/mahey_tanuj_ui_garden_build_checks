@@ -59,6 +59,7 @@ The `Dockerfile` builds the React app inside `/mahey_tanuj_ui_garden_build_check
 `docker ps`
 
 # Open the app in the browser at `http://localhost:8018` or `http://127.0.0.1:8018`.
+`explorer.exe http://localhost:8018`
 
 # Stop and remove the container when done:
 
